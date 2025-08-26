@@ -29,7 +29,7 @@ test('Knowledge topics table displays correctly', async ({ page }) => {
   // Check table headers
   await expect(page.getByRole('cell', { name: 'Topic' })).toBeVisible();
   await expect(page.getByRole('cell', { name: 'Description' })).toBeVisible();
-  await expect(page.getByRole('cell', { name: 'Operator' })).toBeVisible();
+  await expect(page.getByRole('cell', { name: 'Operator', exact : true})).toBeVisible();
   await expect(page.getByRole('cell', { name: 'Created on' })).toBeVisible();
   await expect(page.getByRole('cell', { name: 'Status' })).toBeVisible();
 });
