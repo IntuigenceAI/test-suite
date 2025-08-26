@@ -1,0 +1,23 @@
+{
+  "name": "playwright-tests",
+  "version": "1.0.0",
+  "description": "Automated end-to-end testing suite for web application using Playwright with automatic authentication management",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "install-deps": "playwright install"
+  },
+  "keywords": ["playwright", "testing", "e2e", "authentication"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}

@@ -1,0 +1,22 @@
+.env
+.vscode/
+.claude/
+.claude.json
+.claude.json.backup
+
+# Playwright
+test-results/
+playwright-report/
+/playwright/.cache/
+storage-state.json
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# OS files
+.DS_Store
+Thumbs.db
