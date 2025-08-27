@@ -1,6 +1,6 @@
 # Playwright Test Suite
 
-Automated end-to-end testing suite for web application using Playwright with automatic authentication management.
+Automated UI testing suite using Playwright with automatic authentication management.
 
 ## Features
 
@@ -16,7 +16,6 @@ npm install
 
 2. Set environment variables (optional):
 ```bash
-# Set BASE_URL = staging url
 export BASE_URL=https://azs-dev-eng-1.intuigence.ai/
 ```
 
