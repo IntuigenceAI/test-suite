@@ -46,6 +46,14 @@ module.exports = defineConfig({
       name: 'Google Chrome',
       use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     },
+    { 
+      name: 'iPhone',
+      use: { ...devices['iPhone 14'] } 
+    },
+    { 
+      name: 'Android',
+      use: { ...devices['Pixel 5'] } 
+    },
   ],
 
   /* Run your local dev server before starting the tests */
