@@ -17,7 +17,7 @@ npm install
 2. Set environment variables (optional):
 ```bash
 # Set BASE_URL = staging url
-export BASE_URL=https://your-app-url.com
+export BASE_URL=https://azs-dev-eng-1.intuigence.ai/
 ```
 
 ## Running Tests
@@ -59,7 +59,6 @@ No manual auth setup required - just run tests and login when prompted.
 
 - `playwright.config.js`: Main Playwright configuration
 - `global-setup.js`: Automatic authentication handling
-- `authress/`: Authentication state storage
 
 ## Test Reports
 
