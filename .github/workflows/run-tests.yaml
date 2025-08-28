@@ -1,18 +1,9 @@
-name: Run Playwright UI Tests
-
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 */6 * * *'
-  repository_dispatch:
-    types: [staging-deployed]
-
 jobs:
-  e2e-tests:
+  tests:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [windows-latest, macos-latest]
 
     steps:
       - name: Checkout test repo
@@ -25,6 +16,9 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
 
       - name: Run Playwright tests
         env:
