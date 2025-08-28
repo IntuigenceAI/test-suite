@@ -1,3 +1,8 @@
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [staging-deployed]
+
 jobs:
   tests:
     runs-on: ${{ matrix.os }}
