@@ -40,24 +40,19 @@ npx playwright test
 
 ## Authentication
 
-The test suite automatically manages authentication:
-
-- **First run**: Opens browser for manual login, saves session
-- **Subsequent runs**: Reuses saved session if valid
-- **Expired session**: Automatically prompts for re-login
+The test suite automatically generates a jwt token using authress sdk.
 
 No manual auth setup required - just run tests and login when prompted.
 
 ## Dependencies
 
 - **@playwright/test**: End-to-end testing framework
-- **@authress/login**: Authress authentication library
 - **dotenv**: Environment variable management
 
 ## Configuration
 
 - `playwright.config.js`: Main Playwright configuration
-- `global-setup.js`: Automatic authentication handling
+- `get-token.js`: Automatic authentication handling
 
 ## Test Reports
 

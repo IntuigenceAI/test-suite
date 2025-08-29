@@ -11,13 +11,19 @@
     "report": "playwright show-report",
     "install-deps": "playwright install"
   },
-  "keywords": ["playwright", "testing", "e2e", "authentication"],
+  "keywords": [
+    "playwright",
+    "testing",
+    "e2e",
+    "authentication"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.40.0"
   },
   "dependencies": {
+    "@authress/sdk": "^3.0.187",
     "dotenv": "^16.0.0"
   }
 }

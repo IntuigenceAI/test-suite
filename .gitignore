@@ -9,7 +9,6 @@ test-results/
 playwright-report/
 /playwright/.cache/
 storage-state.json
-
 # Node
 node_modules/
 npm-debug.log*

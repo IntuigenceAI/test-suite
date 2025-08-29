@@ -1,6 +1,9 @@
 import { test, expect } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
+  await page.goto('/');
+  await page.waitForTimeout(50000); // or wait for a specific selector
+
   await page.goto('/chat');
   await page.evaluate(() => window.scrollTo(0, 0)); // scroll to top
 });
