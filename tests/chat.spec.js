@@ -6,12 +6,12 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('Chat page loads successfully', async ({ page }) => {
-  await expect(page.getByRole('heading', { name: 'IntuAI Support Engineer' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'IntuiAI Support Engineer' })).toBeVisible();
 });
 
 test('Chat interface elements are present', async ({ page }) => {
   await expect(page.getByRole('textbox', { name: 'Type your message...' })).toBeVisible();
-  await expect(page.getByText('Welcome to IntuAI Assistant!')).toBeVisible();
+  await expect(page.getByText('Welcome to IntuiAI Assistant!')).toBeVisible();
   await expect(page.getByText('Ask me anything')).toBeVisible();
 });
 
